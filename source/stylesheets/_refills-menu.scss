@@ -1,25 +1,27 @@
 ul.refills-menu {
   font-weight: normal;
   margin-bottom: 5em;
-  margin: -3.3em auto 0 auto;
+  margin: -3.3em auto 1em auto;
   padding: 0;
   text-align: center;
 
   @include media($refills-medium-screen) {
-    margin: -6em auto 0 auto;
+    margin: -6em auto 1em auto;
   }
 
   @include media($refills-large-screen) {
-    margin: -6.7em auto 0 auto;
+    margin: -6.7em auto 1em auto;
   }
 
   .menu-item {
     display: inline;
+    margin: 0 0.3em;
 
     a {
       text-decoration: none;
+      border: 1px solid darken($refills-hero-background, 7);
       border-radius: 3px;
-      color: darken($refills-hero-background, 20%);
+      color: darken($refills-hero-background, 30%);
       font-family: "Lusitana", serif;
       font-size: 0.9em;
       padding: 0.5em 0.5em 2em;
@@ -74,5 +76,13 @@ ul.refills-menu {
 }
 
 .menu-item.unstyled {
-  
+  position: relative;
+}
+
+.menu-item.unstyled:after {
+  @include transform(scale(0.4) rotate(13deg));
+  content: url('/images/new.svg');
+  position: absolute;
+  right: -42px;
+  top: -63px;
 }

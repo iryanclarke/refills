@@ -6,11 +6,12 @@
 @import "neat";
 
 @import "refills-styles";
+@import "refills-header";
 @import "refills-menu";
 @import "bourbon-nav";
 @import "refills-nav";
 
-// .refills-patterns {
+.refills-patterns {
   @import "refills/accordion-tabs";
   @import "refills/accordion-tabs-minimal";
   @import "refills/cards";
@@ -32,9 +33,9 @@
   @import "refills/tables";
   @import "refills/tables-minimal";
   @import "refills/vertical-tabs";
-// }
+}
 
-// .refills-components {
+.refills-components {
   @import "refills/accordion";
   @import "refills/animate";
   @import "refills/animate-info";
@@ -61,17 +62,17 @@
   @import "refills/textures";
   @import "refills/tooltip";
   @import "refills/video";
-// }
+}
 
-// .type-systems {
+.type-systems {
   @import "refills/type-system-geometric";
   @import "refills/type-system-rounded";
   @import "refills/type-system-sans";
   @import "refills/type-system-serif";
   @import "refills/type-system-slab";
   @import "refills/type-system-traditional";
-// }
+}
 
-// .unstyled {
-  @import "refills/accordion-base";
-// }
+.unstyled {
+  @import "refills/unstyled/accordion";
+}
